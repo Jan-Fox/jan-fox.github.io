@@ -1,0 +1,70 @@
+:root {
+  --bg: #0f1115;
+  --fg: #e6e6eb;
+  --muted: #a0a0b0;
+  --accent: #ff7a18;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+header {
+  padding: 3rem 1rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.tagline {
+  color: var(--muted);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem 4rem;
+}
+
+section {
+  margin-top: 3rem;
+}
+
+h2 {
+  border-bottom: 1px solid #2a2d35;
+  padding-bottom: 0.5rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.game {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #2a2d35;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--muted);
+  border-top: 1px solid #2a2d35;
+}
