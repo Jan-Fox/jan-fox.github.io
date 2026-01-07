@@ -69,42 +69,56 @@ footer {
   border-top: 1px solid #2a2d35;
 }
 
-
-/* Working on / XP bar */
+/* Pixel-style XP bars */
 
 #working-on {
   margin-top: 3rem;
 }
 
+.xp-entry {
+  margin-top: 1.5rem;
+}
+
 .working-title {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   font-weight: 600;
 }
 
-.xp-bar {
+.xp-bar.pixel {
+  position: relative;
   width: 100%;
-  height: 20px;
-  background: #2a2d35;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.6);
+  height: 18px;
+  background:
+    repeating-linear-gradient(
+      to right,
+      #1c1e26 0px,
+      #1c1e26 8px,
+      #111218 8px,
+      #111218 10px
+    );
+  border: 2px solid #000;
+  image-rendering: pixelated;
 }
 
 .xp-fill {
   height: 100%;
   width: var(--progress);
-  background: linear-gradient(
-    to right,
-    #6b2cff,
-    #9b6bff
-  );
+  background:
+    repeating-linear-gradient(
+      to right,
+      #5a21d8 0px,
+      #5a21d8 8px,
+      #8f6bff 8px,
+      #8f6bff 10px
+    );
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.3),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.4);
+    inset 0 2px 0 rgba(255, 255, 255, 0.25),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.4);
+  transition: width 0.5s steps(12);
 }
 
 .xp-label {
-  margin-top: 0.4rem;
-  font-size: 0.9rem;
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
   color: var(--muted);
 }
